@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/master.css">
+  <link rel="stylesheet" href="css/output.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+  <section class="w-full ">
+    <div class="container overflow-hidden mx-auto p-8">
+      <div class="card w-full  bg-gradient-to-br from-teal-400 to-gray-800 text-white mx-auto mt-10 rounded-2xl p-10 text-center">
+        <div class="search flex p-4 items-center justify-between w-full">
+          <div class="search-box justify-center gap-x-2 flex items-center w-full">
+            <input type="text" placeholder="Search for the desired city." class="inp rounded-md text-center flex-1 bg-teal-100 text-gray-800 p-3 md:rounded-full md:text-lg rtl focus:outline-none">
+            <button class="btn p-[5px] md:px-4 md:py-2  bg-teal-100 rounded-md md:rounded-full flex items-center justify-center cursor-pointer focus:outline-none">
+              <i class="bi text-black text-3xl bi-search"></i>
+            </button>
+          </div>
+        </div>
+        <div class="location-not-found hidden mt-3 text-xs text-center text-white">
+          <h1>The desired city was not found </h1>
+        </div>
+        <div class="weather hidden">
+          <img src="img/clear.png" alt="Weather Icon" class="weather-img w-44 mx-auto mt-8">
+          <h1 class="temp text-6xl font-medium mt-4">17°C</h1>
+          <h2 class="city text-4xl font-light mt-2">Tehran</h2>
+          <div class="details md:flex gap-x-10 items-center justify-center p-5 mt-5">
+            <div class="col flex items-center text-left">
+              <img src="img/humidity.png" alt="Humidity" class="img-humidity w-10 mr-3">
+              <div class="flex justify-center items-center">
+                <p class="humidity text-xl font-semibold">32%</p>
+                <p>humidity</p>
+              </div>
+            </div>
+            <div class="col flex p-2 mt-5 justify-center items-center text-left">
+              <img src="img/wind.png" alt="Wind" class="img-wind w-10 mr-3">
+              <div>
+                <p class="wind text-xl font-semibold">3 km/h</p>
+                <p>wind speed</p>          
+              </div>
+            </div>
+          </div>
+          <div class="mt-5 md:text-2xl">
+            <p class="description  font-bold my-5"> </p>
+            <p class="timezone font-bold "></p>
+            <p class="name my-5 font-bold "></p>
+          </div>
+          <div class="mt-5 ">
+            <p class="temp_min text-amber-300 opacity-80 text-sm md:text-lg  font-bold my-5"> </p>
+            <p class="temp_max text-amber-300 opacity-80 text-sm md:text-lg font-bold "></p>
+            <p class="feels_like text-amber-300 opacity-80 text-sm md:text-lg my-5 font-bold "></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+<script src="js/weather.js"></script>
+</html>
